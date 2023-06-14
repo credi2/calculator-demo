@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="https://my.dev-cashpresso.com/creditcalculator/c2_creditcalculator.jquery.all.min.js"></script>
+</head>
+<body style="background-color: white;">
+<div style="padding:20px;"><div id="c2_creditcalculator" ></div></div>
+<script type="text/javascript">
+$(document).ready(function() {
+  CreditCalculator.init({targetSelector:"#c2_creditcalculator",language:"en", interestFreeDays:30,partnerApiKey:"5436ed23a2bf5022b18b15be13d347b1",url: "https://my.dev-cashpresso.com/registration", format: "wide", hideButton: false, mode: "test"});
+});
+</script>
+</body>
+</html>
